@@ -7,6 +7,15 @@ Playing around with WebUSB
 2. [Use the instructions](https://www.arduino.cc/en/Guide/HomePage) provided for your model to configure Arduino IDE
 3. Have fun! 
 
+# Helper
+
+## Convert decimal to hex
+
+If your decimal is *34*, you can convert it into hex in the terminal by using:
+
+```
+echo "obase=16; 34" | bc
+```
 
 # MacOS
 
