@@ -60,3 +60,7 @@ This will list all USB devices, for example:
           "IOClassNameOverride" = "IOUSBDevice"
         }
 ```
+
+# Resources
+
+* [JavaScript powered Arduino with Johnny-Five](https://www.safaribooksonline.com/blog/2013/07/16/javascript-powered-arduino-with-johnny-five/)
