@@ -1,6 +1,12 @@
 # WebUSB
 Playing around with WebUSB
 
+# Arduino IDE
+
+1. Find out which Arduino you are using or to which Arduino your microcontroller is compatible to
+2. [Use the instructions](https://www.arduino.cc/en/Guide/HomePage) provided for your model to configure Arduino IDE
+3. Have fun! 
+
 
 # MacOS
 
