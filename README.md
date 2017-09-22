@@ -5,7 +5,7 @@ Playing around with WebUSB
 
 1. Find out which Arduino you are using or to which Arduino your microcontroller is compatible to
 2. [Use the instructions](https://www.arduino.cc/en/Guide/HomePage) provided for your model to configure Arduino IDE
-3. Have fun! 
+3. Have fun!
 
 # Helper
 
@@ -60,6 +60,13 @@ This will list all USB devices, for example:
           "IOClassNameOverride" = "IOUSBDevice"
         }
 ```
+
+## Find your product
+
+* The ID of the USB device Vendor (for example Arduino LLC): idVendor
+* The ID of the USB device: idProduct
+
+This value can be converted to hex.
 
 # Resources
 
