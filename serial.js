@@ -15,7 +15,7 @@ var serial = {};
       { 'vendorId': 0x2341, 'productId': 0x8037 }, // Arduino LLC (9025),
       { 'vendorId': 0x2a03, 'productId': 0x8040 }, // Arduino LLC (10755), Leonardo ETH (32832)
     ];
-    return navigator.usb.requestDevice({}).then(
+    return navigator.usb.requestDevice({ filters: filters }).then(
       device => new serial.Port(device)
     );
   }
@@ -29,11 +29,11 @@ var serial = {};
 
       this.device_.transferIn(5, 64).then(result => {
         this.onReceive(result.data);
-        let view = new Uint8Array(3);
-        view[0] = 255;
-        view[1] = 125;
-        view[2] = 75;
-        this.send(view);
+        // let view = new Uint8Array(3);
+        // view[0] = 255;
+        // view[1] = 125;
+        // view[2] = 75;
+        // this.send(view);
         readLoop();
       }, error => {
         this.onReceiveError(error);

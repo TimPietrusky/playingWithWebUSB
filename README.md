@@ -1,11 +1,33 @@
 # WebUSB
 Playing around with WebUSB
 
-# Arduino IDE
+* Spec: https://wicg.github.io/webusb/
+
+# Arduino
+
+---
+
+## IDE
 
 1. Find out which Arduino you are using or to which Arduino your microcontroller is compatible to
 2. [Use the instructions](https://www.arduino.cc/en/Guide/HomePage) provided for your model to configure Arduino IDE
 3. Have fun!
+
+---
+
+## Coding Reference
+
+* https://www.arduino.cc/en/Reference/HomePage
+
+## Shields
+
+### 2.5kV Isolated DMX 512
+
+* Shield: https://www.tindie.com/products/Conceptinetics/25kv-isolated-dmx-512-shield-for-arduino-r2/
+* Lib: https://sourceforge.net/p/dmxlibraryforar/wiki/
+* http://dmxshield.blogspot.de/2013/04/conceptinetics-dmx-library-for-arduino.html#comment-form
+
+---
 
 # Helper
 
