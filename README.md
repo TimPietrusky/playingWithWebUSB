@@ -24,8 +24,33 @@ Playing around with WebUSB
 ### 2.5kV Isolated DMX 512
 
 * Shield: https://www.tindie.com/products/Conceptinetics/25kv-isolated-dmx-512-shield-for-arduino-r2/
-* Lib: https://sourceforge.net/p/dmxlibraryforar/wiki/
 * http://dmxshield.blogspot.de/2013/04/conceptinetics-dmx-library-for-arduino.html#comment-form
+
+### Library
+
+* Download the lib: https://sourceforge.net/projects/dmxlibraryforar/
+* Install the lib into your Arduino library folder
+* Make these changes in
+`
+// Fix some settings for Arduino Leonardo ETH  https://sourceforge.net/p/dmxlibraryforar/wiki/Getting%20DMX%20library%20to%20work%20on%20Arduino%20Leonardo/
+// Comment this line
+// #define USE_DMX_SERIAL_0
+
+// Uncomment this line
+#define USE_DMX_SERIAL_1
+
+// Decrease the length of the automatic baudrate breaks  
+// Comment this line
+// #define DMX_BREAK_RATE 	 	    49950
+
+// Uncomment this line
+#define DMX_BREAK_RATE 	 	    99900
+`
+
+* Set `DMX_BREAK_RATE` to `99900` in `Conceptinetics.h`
+* Documentation: https://sourceforge.net/p/dmxlibraryforar/wiki/
+
+
 
 ---
 

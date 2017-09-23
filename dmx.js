@@ -20,7 +20,7 @@
 
         window.port.onReceive = data => {
           let textDecoder = new TextDecoder();
-          // console.log(textDecoder.decode(data));
+          console.log(textDecoder.decode(data));
         }
         window.port.onReceiveError = error => {
           console.error(error);
@@ -36,7 +36,8 @@
         return;
       }
 
-      let view = new Uint8Array(6);
+      let view = new Uint8Array(512);
+      view.fill(0);
       view[0] = parseInt(redSlider.value);
       view[1] = parseInt(greenSlider.value);
       view[2] = parseInt(blueSlider.value);
